@@ -56,6 +56,10 @@
   font-size: 20px;
 }
 
+li.item:last-child {
+  padding-bottom: 50px;
+}
+
 @media only screen and (max-width: 600px) {
   .about h2 {
     font-size: 40px;
