@@ -15,7 +15,9 @@ function ProjectDisplay() {
       <h1>{project.name}</h1>
       <img src={project.image} alt={project.name}/>
       <p><b>Skills: </b>{project.skills}</p>
-      <GitHubIcon />
+      <GitHubIcon className="githubIcon" onClick={(event) =>
+              (window.location.href = project.link)
+            }/>
     </div>
   );
 }

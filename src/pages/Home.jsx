@@ -1,8 +1,5 @@
 import React from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-// import EmailIcon from "@material-ui/icons/Email";
-// import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-// import FilePresentIcon from '@mui/icons-material/FilePresent';
 import GithubIcon from "@material-ui/icons/GitHub";
 import { ContactMe } from "./ContactMe";
 import "../styles/Home.css";
@@ -21,7 +18,6 @@ function Home() {
                 "https://www.linkedin.com/in/marinaalmeida20/")
             }
           />
-          {/* <EmailIcon className="emailIcon" onClick={event =>  window.location.href='https://www.linkedin.com/in/marinaalmeida20/'} /> */}
           <GithubIcon
             className="githubIcon"
             onClick={(event) =>
