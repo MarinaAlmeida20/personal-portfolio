@@ -1,7 +1,7 @@
 .navbar {
   width: 100%;
   height: 100px;
-  background: #21325e;
+  background: #FFCAD4;
 }
 
 .links {
@@ -31,12 +31,17 @@
 .toggleButton svg {
   font-size: 50px;
 }
+
 .toggleButton button {
   margin-right: 20px;
   background-color: transparent;
   border: none;
   color: white;
   cursor: pointer;
+}
+
+.links a:hover{
+  color: #b5838d;
 }
 
 #open {
