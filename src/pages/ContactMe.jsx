@@ -1,18 +1,29 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import "../styles/ContactMe.css";
 
-export const ContactUs = () => {
+export const ContactMe = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_a230hdv",
+        "template_i230tvs",
+        form.current,
+        "k2ig4fUpy9zslaFZb"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+          console.log("message sent");
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
   };
 
   return (
@@ -22,7 +33,7 @@ export const ContactUs = () => {
       <label>Email</label>
       <input type="email" name="user_email" />
       <label>Message</label>
-      <textarea name="message" />
+      <textarea name="message" rows="8" cols="50" />
       <input type="submit" value="Send" />
     </form>
   );

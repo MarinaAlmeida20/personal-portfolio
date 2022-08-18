@@ -45,6 +45,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  border-style: none none dotted none;
 }
 
 .skills h1 {
@@ -62,6 +63,10 @@
 
 li.item:last-child {
   padding-bottom: 50px;
+}
+
+.form-title {
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
