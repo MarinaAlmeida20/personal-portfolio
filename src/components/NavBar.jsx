@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import ReorderIcon from "@material-ui/icons/Reorder";
+import CloseIcon from "@material-ui/icons/Close";
 
 import "../styles/NavBar.css";
 
@@ -13,12 +14,20 @@ function NavBar() {
     setExpandNavBar(false);
   }, [location]);
 
+  const handleClick = () => setExpandNavBar((prev) => !prev)
+
   return (
     <div className="navbar" id={expandNavBar ? "open" : "close"}>
       <div className="toggleButton">
-        <button onClick={() => setExpandNavBar((prev) => !prev)}>
-          <ReorderIcon />
-        </button>
+        {expandNavBar ? (
+          <button onClick={handleClick}>
+            <CloseIcon />
+          </button>
+        ) : (
+          <button onClick={handleClick}>
+            <ReorderIcon />
+          </button>
+        )}
       </div>
       <div className="links">
         <Link to="/">Home</Link>
