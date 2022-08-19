@@ -6,11 +6,13 @@
   align-items: center;
   flex-direction: column;
   margin-bottom: 285px;
+  overflow-wrap: anywhere;
+
 }
 
 .project h1 {
   margin-top: 215px;
-  color: #3e497a;
+  color: #b5838d;
   font-size: 35px;
 }
 .project img {
@@ -20,14 +22,35 @@
 
 .project p {
   font-size: 25px;
-  color: #3e497a;
+  color: #b5838d;
 }
 
 .project svg {
   font-size: 60px;
-  color: #3e497a;
+  color: #b5838d;
 }
 
-.githubIcon{
+.githubIcon {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .project {
+    margin-bottom: 7rem;
+
+  }
+
+  .project h1 {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .project img {
+    width: 21rem;
+    border-radius: 10px;
+  }
+
+  .project p {
+    width: 20rem;
+  }
 }
