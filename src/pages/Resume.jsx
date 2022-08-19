@@ -10,10 +10,10 @@ function Resume() {
     <div className="resume">
       <iframe className="iframe"
         title="Marina Resume"
-        width="402"
-        height="480"
+        // width="402"
+        // height="480"
         frameborder="0"
-        scrolling="yes"
+        // scrolling="no"
         src={embedURL}
       ></iframe>
     </div>
