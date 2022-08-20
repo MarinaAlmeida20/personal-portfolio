@@ -17,8 +17,8 @@ export const ContactMe = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          console.log("message sent");
+          // console.log(result.text);
+          // console.log("message sent");
           e.target.reset()
         },
         (error) => {
@@ -30,11 +30,11 @@ export const ContactMe = () => {
   return (
     <form ref={form} onSubmit={sendEmail}>
       <label>Name</label>
-      <input type="text" name="user_name" />
+      <input type="text" name="user_name" required />
       <label>Email</label>
-      <input type="email" name="user_email" />
+      <input type="email" name="user_email" required />
       <label>Message</label>
-      <textarea name="message" rows="8" cols="50" />
+      <textarea name="message" rows="8" cols="50" required />
       <input type="submit" value="Send" />
     </form>
   );
