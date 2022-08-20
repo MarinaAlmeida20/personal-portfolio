@@ -8,7 +8,8 @@ function Resume() {
 
   return (
     <div className="resume">
-      <iframe className="iframe"
+      <iframe
+        className="iframe"
         title="Marina Resume"
         // width="402"
         // height="480"
