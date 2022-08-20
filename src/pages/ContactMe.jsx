@@ -7,6 +7,8 @@ export const ContactMe = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+   
+
 
     emailjs
       .sendForm(
@@ -19,6 +21,7 @@ export const ContactMe = () => {
         (result) => {
           console.log(result.text);
           console.log("message sent");
+          e.target.reset()
         },
         (error) => {
           console.log(error.text);
