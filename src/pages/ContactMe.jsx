@@ -7,8 +7,6 @@ export const ContactMe = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-   
-
 
     emailjs
       .sendForm(
