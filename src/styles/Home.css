@@ -121,9 +121,9 @@ li.item:last-child {
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
   .about {
-    height: calc(185vh - 100px);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .about h2 {
@@ -134,4 +134,5 @@ li.item:last-child {
     width: 30rem;
     font-size: 1.6rem;
   }
+
 }
