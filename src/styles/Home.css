@@ -54,8 +54,6 @@
 .my_img {
   width: 100%;
   height: auto;
-  /* border-radius: 100%; */
-  /* border-radius: 10% 30% 50% 70%; */
   border-radius: 25% 10%;
   border: 5px solid #fff;
 }
@@ -102,6 +100,12 @@ li.item:last-child {
     width: 80%;
   }
 
+  .about {
+    height: calc(155vh - 100px);
+    display: flex;
+    flex-direction: column;
+  }
+
   .skills {
     text-align: center;
   }
@@ -111,5 +115,23 @@ li.item:last-child {
 
   .skills h2 {
     font-size: 30px;
+  }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .about {
+    height: calc(185vh - 100px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about h2 {
+    font-size: 3rem;
+  }
+
+  .about .prompt{
+    width: 30rem;
+    font-size: 1.6rem;
   }
 }
