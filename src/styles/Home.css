@@ -9,19 +9,25 @@
   width: 100%;
   height: calc(100vh - 100px);
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #F4ACB7;
+  background-color: #f4acb7;
   color: #f0f0f0;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 80px;
-  color: #9D8189;
-  height: 50px;
+  font-size: 4rem;
+  color: #9d8189;
+  height: 40px;
 }
 
 .about .prompt {
@@ -34,8 +40,24 @@
   color: white;
 }
 
-.linkedInIcon, .githubIcon {
+.linkedInIcon,
+.githubIcon {
   cursor: pointer;
+}
+
+.img {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10rem;
+}
+
+.my_img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 100%; */
+  /* border-radius: 10% 30% 50% 70%; */
+  border-radius: 25% 10%;
+  border: 5px solid #fff;
 }
 
 .skills {

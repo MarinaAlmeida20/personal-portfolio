@@ -4,27 +4,41 @@ import GithubIcon from "@material-ui/icons/GitHub";
 import { ContactMe } from "./ContactMe";
 import "../styles/Home.css";
 import { ToastContainer } from "react-toastify";
+import MyImg from "../assets/28.jpg";
 
 function Home() {
   return (
     <div className="home">
       <div className="about">
-        <h2>Hi, My name is Marina</h2>
-        <div className="prompt">
-          <p>A software developer with a passion for learning and creating.</p>
-          <LinkedInIcon
-            className="linkedInIcon"
-            onClick={(event) =>
-              (window.location.href =
-                "https://www.linkedin.com/in/marinaalmeida20/")
-            }
+        <div className="img"> 
+          <img
+            className="my_img"
+            src={MyImg}
+            alt="Marina"
+            width="500"
+            height="600"
           />
-          <GithubIcon
-            className="githubIcon"
-            onClick={(event) =>
-              (window.location.href = "https://github.com/MarinaAlmeida20")
-            }
-          />
+        </div>
+        <div className="introduction">
+          <h2>Hi, My name is Marina</h2>
+          <div className="prompt">
+            <p>
+              A software developer with a passion for learning and creating.
+            </p>
+            <LinkedInIcon
+              className="linkedInIcon"
+              onClick={(event) =>
+                (window.location.href =
+                  "https://www.linkedin.com/in/marinaalmeida20/")
+              }
+            />
+            <GithubIcon
+              className="githubIcon"
+              onClick={(event) =>
+                (window.location.href = "https://github.com/MarinaAlmeida20")
+              }
+            />
+          </div>
         </div>
       </div>
       <div className="skills">
