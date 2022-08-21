@@ -1,5 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import "../styles/ContactMe.css";
 
 export const ContactMe = () => {
@@ -7,6 +10,7 @@ export const ContactMe = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    toast.dismiss();
 
     emailjs
       .sendForm(
@@ -17,12 +21,33 @@ export const ContactMe = () => {
       )
       .then(
         (result) => {
+          // console.log(result.status)
           // console.log(result.text);
           // console.log("message sent");
-          e.target.reset()
+          e.target.reset();
+          if (result.status === 200) {
+            toast("🦄 thanks for your message!", {
+              position: "top-right",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+            });
+          }
         },
         (error) => {
           console.log(error.text);
+          toast.error("Something went wrong", {
+            position: "top-right",
+            autoClose: false,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
         }
       );
   };

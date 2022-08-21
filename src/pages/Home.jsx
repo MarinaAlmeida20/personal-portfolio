@@ -3,6 +3,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GithubIcon from "@material-ui/icons/GitHub";
 import { ContactMe } from "./ContactMe";
 import "../styles/Home.css";
+import { ToastContainer } from "react-toastify";
 
 function Home() {
   return (
@@ -47,6 +48,7 @@ function Home() {
       </div>
       <div className="form">
         <h1 className="form-title">Send Me a message</h1>
+        <ToastContainer autoClose={5000} closeOnClick={true} />
         <ContactMe />
       </div>
     </div>
