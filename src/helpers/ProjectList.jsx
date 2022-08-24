@@ -27,7 +27,7 @@ export const ProjectList = [
   {
     name: "Challenge: Hotel",
     image: Proj4,
-    skills: "React,Node.js,MySQL,GraphQL",
+    skills: "HTML,CSS,ReactJS",
     link: "https://github.com/MarinaAlmeida20/cyf-hotel-react/tree/LondonClass8-MarinaAlmeida-CYF-Hotel-React-Module-Week-3"
   },
   {

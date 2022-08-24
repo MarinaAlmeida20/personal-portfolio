@@ -52,7 +52,7 @@ function Home() {
             </span>
           </li>
           <li className="item">
-            <h2>Hard Skills</h2>
+            <h2>Technologies</h2>
             <span>
               HTML & CSS, ReactJS, NPM, BootStrap, MaterialUI, Yarn,
               TailwindCSS, StyledComponents, NodeJS, ExpressJS, PostgresSQL
