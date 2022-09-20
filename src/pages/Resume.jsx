@@ -10,6 +10,7 @@ function Resume() {
   return (
     <div className="resume">
     <iframe src="https://drive.google.com/file/d/1DQMwg0gf1e5_pBTVso8sKsiWHd3d1MNX/preview" width="640" height="480" allow="autoplay"></iframe>
+    {/*
 //       <iframe
 //         className="iframe"
 //         title="Marina Resume"
@@ -18,7 +19,8 @@ function Resume() {
 //         frameborder="0"
 //         // scrolling="no"
 //         src={embedURL}
-//       ></iframe>
+//       ></iframe> 
+*/}
     </div>
   );
 }
