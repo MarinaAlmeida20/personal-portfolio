@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "personal-portfolio",
+=======
+  "name": "portfolio2.0",
+>>>>>>> ee020f6 (portifolio 2.0)
   "private": true,
   "version": "0.0.0",
   "type": "module",
