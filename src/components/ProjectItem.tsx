@@ -1,7 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function ProjectItem({ image, name, id }) {
+type ProjectItemTypes = {
+    id?: string;
+    image?: string
+    name?: string
+}
+
+function ProjectItem({ image, name, id }: ProjectItemTypes) {
     const navigate = useNavigate();
 
     return (

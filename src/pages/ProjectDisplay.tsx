@@ -13,6 +13,8 @@ type ParamsID = {
 
 function ProjectDisplay() {
     const { id } = useParams<ParamsID>();
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     const project = ProjectList[id]; // position inside the projectList file
 
     return (
