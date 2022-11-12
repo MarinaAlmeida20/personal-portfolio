@@ -1,9 +1,7 @@
-import React from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GithubIcon from "@material-ui/icons/GitHub";
 import { Interests } from './Interests'
 import "../styles/Home.css";
-import { ToastContainer } from "react-toastify";
 import MyImg from "../assets/28.jpg";
 
 function Home() {
