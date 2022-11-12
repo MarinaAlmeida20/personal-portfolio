@@ -7,25 +7,49 @@
   flex-direction: column;
   margin-bottom: 285px;
   overflow-wrap: anywhere;
-
+  color: #b5838d;
 }
 
-.project h1 {
-  margin-top: 215px;
+.projectWithOutImage {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-wrap: anywhere;
   color: #b5838d;
+  margin: 0 auto;
+}
+
+.project .main-title {
+  margin-top: 215px;
   font-size: 35px;
 }
+
+.projectWithOutImage .title {
+  margin-top: 0px;
+}
+
+.projectWithOutImage .progress {
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+}
+
 .project img {
   width: 700px;
   border-radius: 10px;
 }
 
-.project p {
+.project p,
+.projectWithOutImage p {
   font-size: 25px;
   color: #b5838d;
 }
 
-.project svg {
+.project svg,
+.projectWithOutImage svg {
   font-size: 60px;
   color: #b5838d;
 }
@@ -37,7 +61,6 @@
 @media only screen and (max-width: 800px) {
   .project {
     margin-bottom: 7rem;
-
   }
 
   .project h1 {
