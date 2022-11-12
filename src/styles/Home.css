@@ -70,20 +70,22 @@
 
 .skills h1 {
   color: #b5838d;
+  margin-bottom: 0px;
 }
 
 .skills .list {
   list-style: none;
   width: 60%;
+  margin-top: 0;
 }
 
 .list span {
   font-size: 20px;
 }
 
-li.item:last-child {
+/* li.item:last-child {
   padding-bottom: 50px;
-}
+} */
 
 .form-title {
   text-align: center;
@@ -101,7 +103,7 @@ li.item:last-child {
   }
 
   .about {
-    height: calc(155vh - 100px);
+    height: calc(155vh - 255px);
     display: flex;
     flex-direction: column;
   }
@@ -109,6 +111,7 @@ li.item:last-child {
   .skills {
     text-align: center;
   }
+
   .list {
     padding: 0;
   }
@@ -117,7 +120,6 @@ li.item:last-child {
     font-size: 30px;
   }
 }
-
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
   .about {
@@ -130,9 +132,8 @@ li.item:last-child {
     font-size: 3rem;
   }
 
-  .about .prompt{
+  .about .prompt {
     width: 30rem;
     font-size: 1.6rem;
   }
-
 }
