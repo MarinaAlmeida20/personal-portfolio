@@ -16,7 +16,7 @@ Creating this Portfolio was an opportunity for me to show many of my abilities a
 ## ✨ Demo
 
 <p align="center">
-  <img width="700" align="center" src="" alt="demo"/>
+  <img width="700" align="center" src="https://github.com/MarinaAlmeida20/personal-portfolio/blob/main/src/assets/demo.gif?raw=true" alt="demo"/>
 </p>
 
 ## Author
