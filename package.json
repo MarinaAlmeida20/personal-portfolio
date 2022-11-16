@@ -2,12 +2,10 @@
   "name": "portfolio2.0",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview --port 8080",
-    "deploy": "npm run build && netlify deploy --prod"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
@@ -27,7 +25,8 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-toastify": "^9.0.8",
-    "react-vertical-timeline-component": "^3.5.2"
+    "react-vertical-timeline-component": "^3.5.2",
+    "@netlify/functions": "^0.7.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
